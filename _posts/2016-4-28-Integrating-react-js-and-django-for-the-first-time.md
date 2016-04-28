@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Starting off my fantasy football web application
-tags: django, mysql, fantasy football
+title: Basic tutorial on setting up a very basic Django and React JS application
+tags: django, react, html, work
 ---
 Setting up a basic app with ReactJS and Django
 
