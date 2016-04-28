@@ -100,7 +100,7 @@ def index(request):
 ```
 Alright! So now we're returning a view. Well... an empty html file....
 5. So let's fix the html file! Let's put some super simple html
-``` html
+```
 {% load static %}
 <!DOCTYPE html>
 <html>
