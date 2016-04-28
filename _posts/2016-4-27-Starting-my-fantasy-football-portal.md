@@ -12,10 +12,15 @@ So, that being said, I've been dying to combine my love of fantasy football with
 To start of, my preliminary idea for this application is a web based (what I'm going to call a) "portal". My thought would be that this portal is essentially just a dashboard that you can use to pull up a player(s)/team(s) basic information; essentially, something that you would see in ESPN's "clubhouse" view, but with more fantasy-centric information. The best part about this is that I already have a data set for this (shout out to armchair analysis).  [Armchair Analysis](http://www.armchairanalysis.com/) does a great job of providing detailed and affordable football statistics, which (for cheap) you can download after the season ends.
 
 My thoughts to implement this would to be to use:
+
   - Django as my backend/web-server
+
   - MySQL as my DBMS, within django
+
   - ReactJS as my front-end UI management
+
   - Have D3.js integration within my front-end UI
+  
 This is... a lot, for me. I'm definitely pretty comfortable with Django now, but I just started learning ReactJS and I've never used MySQL before[^1].
 
 That being said, I'm super excited to learn. I can't wait to get into this, and I'll definitely be posting blog entries on here as I go. Hopefully, this will aid in my programming knowledge and, maybe, someone might find my struggles entertaining or enlightening (aka please learn from all the stupid mistakes I make).
