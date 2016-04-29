@@ -57,7 +57,7 @@ Alright! So now we're returning a view. Well... an empty html file....
 
 So let's fix the html file! Let's put some super simple html
 ```
-{% load static %}
+{ % load static % }
 <!DOCTYPE html>
 <html>
     <head>
@@ -66,13 +66,13 @@ So let's fix the html file! Let's put some super simple html
     </head>
     <body>
       <div id="app"></div>
-      <script src="{% static "your_app_name/bundle.js" %}"></script>
+      <script src="{ % static "your_app_name/bundle.js" % }"></script>
     </body>
 </html>
 ```
 A few things in this html file:
 * `<div id="app">` is where we're going to have the react hook in.
-* `{% load static %}` ... `<script src="{% static "your_app_name/bundle.js" %}"></script>` is where we'll import our React code.
+* `{ % load static % }` ... `<script src="{ % static "your_app_name/bundle.js" % }"></script>` is where we'll import our React code.
 Awesome!
 6. Let's try out our server!
 
