@@ -8,9 +8,11 @@ Setting up a basic app with ReactJS and Django
 ## 0. [Pre-step] Install Node.js and Django
 
 If not installed already, we'll need to install Node.js [here](https://nodejs.org/en/download/) and django can be installed with
-```python
+
+```
 $ pip install django
 ```
+
 This, of course, assumes python is already installed (why haven't you already!)
 
 
@@ -77,8 +79,7 @@ Let's start of by doing all the things necessary to get the most basic django se
 
 ##### Get our main django project up and running
 
-Let's start easy and have our urlsconf redirect to our application. If we're in the project root directory, open up `your_project_name/urls.py` and make it look like this
-We're pretty much just setting up the website to send a url of http://127.0.0.1:8000/ to our `your_app_name`... err... app!
+Let's start easy and have our urlsconf redirect to our application. If we're in the project root directory, open up `your_project_name/urls.py` and make it look like the following.
 
 ```python
 from django.conf.urls import include, url
@@ -89,10 +90,10 @@ urlpatterns = [
 ]
 ```
 
-Awesome.
+We're pretty much just setting up the website to send a url of http://127.0.0.1:8000/ to our `your_app_name`... err... app! Awesome.
 
 Now time to set up our `your_project_name/settings.py` file. Open it up and let's add some stuff.
-I'm only going to show things that I'm adding around what's already there
+I'm only going to show things that I'm adding around what's already there:
 
 ```python
 INSTALLED_APPS = [
@@ -146,10 +147,13 @@ So let's fix the html file! Let's put some super simple html:
 ```
 
 A few things in this html file:
+
 * `<div id="app">` is where we're going to have the react hook in.
+
 * `{ % load static % }` ... `<script src="{ % static "your_app_name/bundle.js" % }"></script>` is where we'll import our React code.
 Awesome!
-6. Let's try out our server!
+
+Let's try out our server!
 
 At this point, we can actually run our server and see what happens. If we just get a blank page returned, we know we're golden (and no errors when our server is started).
 So, that being said:
