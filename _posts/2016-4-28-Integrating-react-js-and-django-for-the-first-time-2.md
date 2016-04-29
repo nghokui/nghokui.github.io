@@ -10,7 +10,7 @@ Let's start of by doing all the things necessary to get the most basic django se
 Let's start easy and have our urlsconf redirect to our application. If we're in the project root directory, open up `your_project_name/urls.py` and make it look like this
 We're pretty much just setting up the website to send a url of http://127.0.0.1:8000/ to our `your_app_name`... err... app!
 
-```python
+```
 from django.conf.urls import include, url
 ...
 urlpatterns = [
@@ -22,7 +22,7 @@ urlpatterns = [
 Now time to set up our `your_project_name/settings.py` file. Open it up and let's add some stuff.
 I'm only going to show things that I'm adding around what's already there
 
-```python
+```
 INSTALLED_APPS = [
   'your_app_name.apps.Your_app_nameConfig', # we're adding our app to the installed apps list
   ...
@@ -37,7 +37,7 @@ Fantastic!
 Now, let's set up our django app. Let's first open up our `your_project_name/your_app_name/urls.py` and let's handle the url passing.
 Since we're going to assume that the home page (`http://127.0.0.1:8000`, the default django server port) is going to direct to this app, add the following
 
-```python
+```
 from django.conf.urls import url
 from . import views
 
@@ -49,7 +49,7 @@ This will allow us to return a view specified in our `your_app_name/views.py` fi
 
 Open up `your_app_name/views.py` and let's create the view that's going to display. Well, sans-html of course. We'll get to that real soon.
 
-``` python
+```
 def index(request):
   return render(request, 'your_app_name/index.html', {})
 ```
