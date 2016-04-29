@@ -51,7 +51,7 @@ Open up `your_app_name/views.py` and let's create the view that's going to displ
 
 ```
 def index(request):
-  return render(request, 'your_app_name/index.html', {})
+  return render(request, 'your_app_name/index.html', { })
 ```
 Alright! So now we're returning a view. Well... an empty html file....
 
