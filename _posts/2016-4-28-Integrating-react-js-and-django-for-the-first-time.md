@@ -2,6 +2,7 @@
 layout: post
 title: Tutorial on setting up a basic Django/ReactJS application
 tags: django, react, html, work
+visible: 1
 ---
 Setting up a basic app with ReactJS and Django
 
